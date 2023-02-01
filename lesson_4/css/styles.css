@@ -1,0 +1,77 @@
+/*-------------------Reset Style--------------------*/
+@import "reset.css";
+/*-------------------CSS Import Method--------------------*/
+@import url(https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;600;800&family=Poppins:wght@300;400;500;600;700;800&display=swap);
+/*-------------------CSS Font File Method--------------------*/
+@font-face {
+	font-family: "Integral CF";
+	src: url(../fonts/IntegralCF-Regular.woff2) format("woff2"), url(../fonts/IntegralCF-Regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Integral CF";
+	src: url(../fonts/IntegralCF-Medium.woff2) format("woff2"), url(../fonts/IntegralCF-Medium.woff) format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Integral CF";
+	src: url(../fonts/IntegralCF-Heavy.woff2) format("woff2"), url(../fonts/IntegralCF-Heavy.woff) format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+
+.header__title {
+	font-family: "Integral CF";
+	font-size: 3.75rem;
+	font-weight: 900;
+	line-height: 2;
+	letter-spacing: 4.75rem;
+	color: rgb(10, 10, 114);
+	text-align: center;
+	text-decoration: underline;
+}
+.content__article {
+	text-indent: 1rem;
+	font-size: 2rem;
+	font-family: "Cormorant Garamond";
+	color: darkorchid;
+	font-weight: 500;
+	text-align: justify;
+}
+.content__article_capitalized {
+	text-transform: capitalize;
+	font-family: "Martian Mono";
+	font-weight: 600;
+}
+.content__article_upper {
+	text-transform: uppercase;
+	font-family: "Martian Mono";
+	font-weight: 300;
+	color: green;
+}
+.content__article_lowercase {
+	text-transform: lowercase;
+	font-weight: 700;
+	text-align: right;
+	color: darkcyan;
+}
+.content__article_extrab {
+	font-family: "Martian Mono";
+	font-weight: 800;
+	color: crimson;
+}
+.content__article_reg {
+	font-weight: 400;
+}
+.content__article_integral-reg {
+	font-family: "Integral CF";
+	font-weight: 400;
+	color: cornflowerblue;
+}
+.content__article_integral-mid {
+	font-family: "Integral CF";
+	font-weight: 500;
+	color: deeppink;
+}
