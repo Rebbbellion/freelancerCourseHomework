@@ -1,0 +1,184 @@
+@import "reset.css";
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;700&display=swap);
+body {
+	font-family: "Inter";
+	font-weight: 700;
+	font-size: 1rem;
+	color: #637381;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		128deg,
+		rgba(255, 255, 255, 1) 32%,
+		rgba(229, 220, 237, 1) 48%,
+		rgba(192, 174, 210, 1) 56%,
+		rgba(128, 104, 152, 1) 64%,
+		rgba(114, 16, 180, 1) 71%,
+		rgba(24, 6, 134, 1) 82%,
+		rgba(252, 176, 69, 1) 87%
+	);
+}
+[class*="__container"] {
+	max-width: 1270px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+.header {
+	font-family: "Poppins";
+	font-weight: 300;
+	font-size: 0.75rem;
+	line-height: 1.67;
+	color: #e5e5e5;
+}
+.header__container {
+	padding: 330px 15px 100px;
+}
+.header__background {
+	background: url(../img/tower.jpg) 0 0 / cover no-repeat fixed, #212529;
+	min-height: 600px;
+	margin-bottom: 100px;
+	border-radius: 0px 5px 5px 0px;
+}
+.header__date {
+	margin-bottom: 15px;
+}
+.header__title {
+	font-weight: 700;
+	font-size: 1.5625rem;
+	line-height: 1.6;
+	color: #f8f9fa;
+	margin-bottom: 15px;
+	max-width: 605px;
+}
+.header__text {
+	max-width: 351px;
+}
+.content__container_list {
+	margin-bottom: 150px;
+}
+.list-block__title {
+	font-weight: 400;
+	font-size: 1.625rem;
+	color: #212b36;
+	line-height: 1.08;
+	margin-bottom: 45px;
+}
+[class^="list-block__item"]:not(:last-child) {
+	margin-bottom: 60px;
+}
+[class^="list-block__item"] li:not(:last-child) {
+	margin-bottom: 16px;
+}
+.list-block__item li{
+	max-width: 570px;
+	margin-left: 18px;
+	transition: all 0.3s ease;
+}
+.list-block__item li::before {
+	display: inline-block;
+	margin-right: 10px;
+	content: "";
+	min-width: 20px;
+	min-height: 20px;
+	margin-left: -18px;
+}
+.list-block__item:nth-of-type(1) li::before {
+	background: url(../img/icons/Ellipse.svg) 0 0 no-repeat;
+	min-width: 8px;
+	min-height: 8px;
+}
+.list-block__item:nth-of-type(2) li::before {
+	background: url(../img/icons/checkmark-circle1.svg) 0 0 no-repeat;
+}
+.list-block__item:nth-of-type(3) li::before {
+	background: url(../img/icons/checkmark-circle2.svg) 0 0 no-repeat;
+}
+.list-block__item:nth-of-type(4) li::before {
+	background: url(../img/icons/cross-circle1.svg) 0 0 no-repeat;
+}
+.list-block__item:nth-of-type(5) li::before {
+	background: url(../img/icons/arrow-right1.svg) 0 0 no-repeat;
+}
+.list-block__item:nth-of-type(6) li::before {
+	background: url(../img/icons/star1.svg) 0 0 no-repeat;
+}
+.list-block__item:nth-of-type(1) li:hover{
+	color: #3056d3;
+}
+.list-block__item:nth-of-type(2) li:hover{
+	color: #5e7de0;
+}
+.list-block__item:nth-of-type(3) li:hover{
+	color: #30d33b;
+}
+.list-block__item:nth-of-type(4) li:hover{
+	color: #d33030;
+}
+.list-block__item:nth-of-type(5) li:hover{
+	color: #9d30d3;
+}
+.list-block__item:nth-of-type(6) li:hover{
+	color: #30b0d3;
+}
+
+.content__background {
+	background: url(../img/heroarea.jpg) 0 0 / cover no-repeat,
+		linear-gradient(90deg, rgba(48, 86, 211, 0.08) 16.13%, rgba(48, 86, 211, 0) 86.29%);
+	opacity: 0.5;
+	transition: opacity 0.5s ease;
+	min-height: 560px;
+}
+.content__background:hover{
+	opacity: 1;
+}
+.content__container_speaker {
+	font-size: 0;
+}
+.content__container_speaker img {
+	font-size: 1rem;
+	padding: 81px 0px 83px;
+}
+.textblock__price {
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.33;
+	color: #3056d3;
+	margin-bottom: 13px;
+}
+.textblock__title {
+	font-size: 2.25rem;
+	line-height: 1.25;
+	color: #212b36;
+	margin-bottom: 15px;
+}
+.textblock__text {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-bottom: 35px;
+}
+.textblock__link {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.5;
+	padding: 8px 28px;
+	background: #3056d3;
+	border: #3056d3 2px solid;
+	border-radius: 30px;
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+.textblock__link:hover{
+	color: #3056d3;
+	background: #ffffff;
+}
+.content__textblock {
+	display: inline-block;
+	max-width: 570px;
+	margin-right: 179px;
+	padding: 145px 0px 146px;
+}
